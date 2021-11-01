@@ -1,10 +1,26 @@
 $(document).ready(function(){
 
+
+    $('[data-scroll]').on('click', function(e){
+        e.preventDefault();
+
+        var elemId = $(this).data('scroll');
+        var elemOffset = $(elemId).offset().top;
+
+        $('html, body').animate({
+            scrollTop: elemOffset
+        },1000);
+
+    });
+
     var $menu = $(".card__wrapper");
+    let $blockScroll = $(".screenshot");
+    let $blockScrollHeight = $($blockScroll).height();
+    let counterScroll = 0;
+    console.log($blockScrollHeight);
 
     $(window).scroll(function(){
-        console.log($(this).scrollTop());
-        if ( $(this).scrollTop() > 528 ){
+        if ($(this).scrollTop() > 528){
             $menu.addClass("stop_fixed");
         } else {
             $menu.removeClass("stop_fixed");
@@ -17,7 +33,7 @@ $(document).ready(function(){
             $('.card_mask').height(386);
         }
 
-    });//scroll
+    });
 
     if ( $(window).scrollTop() > 528 ){
         $menu.addClass("stop_fixed");
@@ -33,5 +49,12 @@ $(document).ready(function(){
         prevEl: ".nav_slider .swiper-button-prev",
         },
     });
+
+    $('.burger').on('click', function() {
+        let $body = $('body');
+        $(this).parents().find('.header__menu').toggleClass('_active');
+        $($body).toggleClass('hidden');
+        $('.burger__menu').toggleClass('_active');
+    })
 
 });

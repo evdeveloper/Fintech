@@ -1,0 +1,10 @@
+@mixin size($a,$b: $a) {
+    width: $a;
+    height: $b;
+}
+
+@mixin media($size) {
+    @media screen and (max-width: $size+'px') {
+        @content;
+    }
+}

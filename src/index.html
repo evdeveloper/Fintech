@@ -2,50 +2,51 @@
 layout: default
 title: FINtech | Home
 ---
-<main>
+<main class="main">
 	<section class="screenshot">
 		<div class="container">
 			<span class="before__title gradient_text">Grow on your terms</span>
 			<h1>Get paid by the year, charge by the <span class="gradient_text">month</span></h1>
 			<div class="platform_screenshot">
-
+				<img src="assets/images/screenshot.svg" alt="img">
 				<div class="card__wrapper">
 					<div class="card_mask">
-						<img src="assets/images/card1.jpg" alt="" class="visible_card">
+						<img src="assets/images/card1.jpg" alt="img" class="visible_card">
 					</div>
 					<div class="card_second_layout">
-						<img src="assets/images/card2.jpg" alt="" class="hidden_card">
+						<img src="assets/images/card2.svg" alt="img" class="hidden_card">
 					</div>
 				</div>
-
+				<div class="social">
+					<a href="#" class="fb"></a>
+					<a href="#" class="instagram"></a>
+					<a href="#" class="youtube"></a>
+				</div>
 			</div>
-			<div class="social">
-				<a href="#" class="fb"></a>
-				<a href="#" class="instagram"></a>
-				<a href="#" class="youtube"></a>
-			</div>
-		</div>
-	</section>
-
-	<section class="features">
-		<div class="container">
+			
 			<div class="row">
 				<div class="column">
-					<div class="title">
-						<span class="gradient_text">Access</span><br/>your money
-					</div>
+					<h2 class="section-title">
+						<span class="gradient_text">Access</span> your money
+					</h2>
 					<div class="descr">
 						<span class="white">Skip the traditional</span> <span class="silver">
 							marketplace payout delay and get capital fast based on your eCommerce sales...
 						</span>
 					</div>
 				</div>
-			</div>			
+			</div>
+		</div>
+	</section>
+
+	<section class="features">
+		<div class="container">
+			<div class="row"></div>			
 			<div class="row">
 				<div class="column">
-					<div class="title">
-						Get<br/>approved <span class="gradient_text">fast</span>
-					</div>
+					<h2 class="section-title">
+						Get approved <span class="gradient_text">fast</span>
+					</h2>
 					<div class="descr">
 						<span class="silver">
 							Don’t let cash flow and capital constraints get in the way of your sales growth.
@@ -53,16 +54,16 @@ title: FINtech | Home
 					</div>
 				</div>
 				<div class="column">
-					<img src="assets/images/feature2_img.png" alt="">
+					<img src="assets/images/feature2_img.png" alt="img">
 				</div>
 
 			</div>			
 			<div class="row">
 				<div class="column">
-					<div class="title">
-						<span class="gradient_text">Grow</span> your<br/>
-						eCommerce <span class="gradient_text"><br/>business</span>
-					</div>
+					<h2 class="section-title">
+						<span class="gradient_text">Grow</span> your
+						eCommerce <span class="gradient_text">business</span>
+					</h2>
 					<div class="descr">
 						<span class="silver">
 							Don’t let cash flow and capital constraints get in the way of your sales growth.
@@ -83,7 +84,7 @@ title: FINtech | Home
 			<h2>Fast finding for <span class="gradient_text">Amazon</span> sellers</h2>
 			<div class="row">
 				<div class="column">
-					<img src="assets/images/finding_img.jpg" alt="">
+					<img src="assets/images/finding_img.svg" alt="img">
 				</div>
 				<div class="column">
 
@@ -110,15 +111,17 @@ title: FINtech | Home
 	</section>
 	<section class="trusted color_block">
 		<div class="container">
-			<h2>Trusted and secured</h2>
-			<p>The Payability platform is encrypted end-to-end with bank-level security, so you can rest easy knowing you’ll receive your payments quickly, consistently, and securely.</p>
+			<div class="trusted__inner">
+				<h2 class="section-title">Trusted and secured</h2>
+				<p>The Payability platform is encrypted end-to-end with bank-level security, so you can rest easy knowing you’ll receive your payments quickly, consistently, and securely.</p>
+			</div>
 		</div>
 	</section>	
 
 	<section class="leaders_slider">
 		<div class="container">
 			<div class="row block_head">
-				<h2>Loved by Industry leaders</h2>
+				<h2 class="section-title">Loved by Industry leaders</h2>
 				<div class="nav_slider">
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
@@ -267,50 +270,39 @@ title: FINtech | Home
 
 	<section class="no_extra_work">
 		<div class="container">
-			<div class="row block_head">
-				<h2>No extra work for your team</h2>
-				<div class="text">See results in real-time while you focus on growth</div>
-			</div>
-			<div class="row">
-
-				<div class="column">
-
-					<div class="row">
-						<div class="column">
-							<img src="assets/images/ico/no_extra_1.svg" alt="">
+			<div class="extra__inner">
+				<div class="extra__top">
+					<h2 class="section-title">No extra work for your team</h2>
+					<p>See results in real-time while you focus on growth</p>
+				</div>
+				<div class="extra__body">
+					<div class="extra__list">
+						<div class="extra__item">
+							<h3>Syncs with your existing payment tools</h3>
+							<p>Pipe constantly syncs with your contracts in real-time.</p>
+							<img src="assets/images/ico/no_extra_1.svg" alt="ico">
 						</div>
-						<div class="column">
-							<div class="title">Syncs with your<br/>existing payment tools</div>
-							<div class="text">Pipe constantly syncs with your contracts in real-time.</div>
-						</div>
-					</div>					
-					<div class="row">
-						<div class="column">
-							<img src="assets/images/ico/no_extra_2.svg" alt="">
-						</div>
-						<div class="column">
-							<div class="title">Automated monthly statements</div>
-							<div class="text">Keep your accounting team in the know without lifting a finger.</div>
+						<div class="extra__item">
+							<h3>Automated monthly statements</h3>
+							<p>Keep your accounting team in the know without lifting a finger.</p>
+							<img src="assets/images/ico/no_extra_2.svg" alt="ico">
 						</div>
 					</div>
-
-				</div>
-				<div class="column">
-					<img src="assets/images/no_extra_work.jpg" alt="">
+					<div class="extra__img">
+						<img src="assets/images/no_extra_work.png" alt="ico">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="never color_block">
+	<section class="never">
 		<div class="container">
-			<div class="content">
-				<h2>Never take on debt or dilution again</h2>
-				<p>We’ve created a new platform that turns recurring revenues into upfront capital. Connect your systems in minutes to find out how much capital you can<br/>access instantly.</p>
+			<div class="never__inner">
+				<h2 class="section-title">Never take on debt or dilution again</h2>
+				<p>We’ve created a new platform that turns recurring revenues into upfront capital. Connect your systems in minutes to find out how much capital you can access instantly.</p>
 				<a href="#" class="button black">GET STARTED!</a>
-			</div>
-			<div class="img">
-				<img src="assets/images/never_bg.svg" alt="">
+				<img src="assets/images/never_bg.svg" alt="img">
 			</div>
 		</div>
 	</section>
